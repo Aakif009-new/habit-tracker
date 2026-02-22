@@ -1,0 +1,163 @@
+/* assets/css/dark-mode.css */
+/* Subject: Web Technology - CSS Variables, Theming */
+
+/* Dark mode variables */
+[data-theme="dark"] {
+    --primary-color: #66bb6a;
+    --danger-color: #ef5350;
+    --text-color: #f5f5f5;
+    --bg-color: #1a1a1a;
+    --card-bg: #2d2d2d;
+    --border-color: #404040;
+    --shadow: 0 2px 4px rgba(0,0,0,0.3);
+    --hover-bg: #3d3d3d;
+}
+
+/* Dark mode specific styles */
+[data-theme="dark"] body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .habit-card {
+    background-color: var(--card-bg);
+    border-color: var(--border-color);
+}
+
+[data-theme="dark"] .habit-description {
+    color: #aaa;
+}
+
+[data-theme="dark"] input[type="text"],
+[data-theme="dark"] textarea,
+[data-theme="dark"] input[type="color"] {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    border-color: var(--border-color);
+}
+
+[data-theme="dark"] .day-btn {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    border-color: var(--border-color);
+}
+
+[data-theme="dark"] .day-btn:hover:not(.completed) {
+    background-color: var(--hover-bg);
+}
+
+[data-theme="dark"] .habit-stats {
+    background-color: rgba(255,255,255,0.05);
+}
+
+[data-theme="dark"] .btn-icon {
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .btn-icon:hover {
+    background-color: var(--hover-bg);
+}
+
+[data-theme="dark"] .auth-container {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%) !important;
+}
+
+[data-theme="dark"] .auth-card,
+[data-theme="dark"] .login-page .auth-card {
+    background-color: rgba(45, 45, 45, 0.95) !important;
+    color: var(--text-color);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .login-page .auth-header h1,
+[data-theme="dark"] .auth-header h1 {
+    color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .login-page .auth-header p,
+[data-theme="dark"] .auth-header p {
+    color: #aaa !important;
+}
+
+[data-theme="dark"] .auth-card input {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border-color: var(--border-color);
+}
+
+[data-theme="dark"] .auth-footer {
+    border-top-color: var(--border-color);
+    color: #aaa;
+}
+
+/* Auth pages (login/register) theme toggle position */
+.auth-container {
+    position: relative;
+}
+.auth-theme-toggle {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    z-index: 10;
+}
+
+[data-theme="dark"] .error-message {
+    background-color: #442222;
+    color: #ff8a80;
+}
+
+[data-theme="dark"] .success-message {
+    background-color: #1e3a1e;
+    color: #a5d6a7;
+}
+
+[data-theme="dark"] .chart-container {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    padding: 15px;
+}
+
+/* Index / landing page dark mode */
+[data-theme="dark"] .navbar {
+    border-bottom-color: var(--border-color);
+}
+
+[data-theme="dark"] .nav-brand {
+    color: var(--primary-color);
+}
+
+[data-theme="dark"] .feature-card {
+    background-color: var(--card-bg);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.25);
+}
+
+[data-theme="dark"] .feature-card h3 {
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .feature-card p {
+    color: #aaa;
+}
+
+[data-theme="dark"] .feature-card i {
+    color: var(--primary-color);
+}
+
+[data-theme="dark"] .btn-login {
+    color: #9eb8ff;
+}
+
+[data-theme="dark"] .btn-login:hover {
+    background: rgba(102, 126, 234, 0.2);
+    color: #b8caff;
+}
+
+[data-theme="dark"] .page-footer,
+[data-theme="dark"] footer {
+    color: #aaa !important;
+}
+
+/* Smooth transition for theme switching */
+* {
+    transition: background-color 0.3s ease, color 0.2s ease, border-color 0.3s ease;
+}
