@@ -64,8 +64,4 @@ It is built using **PHP, MySQL, JavaScript, AJAX, and Chart.js**.
 ### Tools
 - Laragon (Local Server)
 - phpMyAdmin
-- Git & GitHub
 
----
-
-## 📂 Project Structure
