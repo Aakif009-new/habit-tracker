@@ -65,6 +65,7 @@ It is built using **PHP, MySQL, JavaScript, AJAX, and Chart.js**.
 - Laragon (Local Server)
 - phpMyAdmin
  📂 Project Structure
+```bash
 habit-tracker/
 │── api/ # Backend API files
 │── assets/ # CSS, JS, Images
@@ -77,7 +78,7 @@ habit-tracker/
 │── logout.php
 │── index.php
                            ---------------------------------------------------------------------------------------------------------------------------------------------------
-  
+  ```
 ---
 
 ## ⚙️ How to Run This Project
